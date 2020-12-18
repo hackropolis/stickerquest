@@ -2,6 +2,8 @@ name: Continuous Deployment
 
 on:
   push:
+    branch:
+      - main
   pull_request:
 
 env:
@@ -9,7 +11,7 @@ env:
 
 jobs:
   build-nightly:
-    name: Build branch {{}} on ${{ matrix.os }}, for ${{ matrix.rust }} rust
+    name: Build on ${{ matrix.os }}, for ${{ matrix.rust }} rust
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
