@@ -1,4 +1,4 @@
-use std::io::{self, Write};
+use std::io;
 
 // A utility function to receive answers.
 
@@ -16,7 +16,7 @@ pub fn intro() -> () {
     println!(
         "
 	==================================
-			   STICKER QUEST
+			STICKER QUEST
 	==================================
 
 	Huh, there's a vibration coming from
