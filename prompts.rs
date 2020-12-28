@@ -3,9 +3,6 @@ use std::io::{self, Write};
 // A utility function to receive answers.
 
 fn prompt() -> bool {
-    print!("\n> ");
-    io::stdout().flush().unwrap(); // flush the output buffer to make sure our prompt is outputted
-
     let mut input = String::new();
     io::stdin().read_line(&mut input).unwrap();
 
